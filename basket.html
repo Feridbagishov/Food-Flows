@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>basketShopping</title>
+    <script src="./quantiy.js"></script>
+    <script src="https://kit.fontawesome.com/7fdf74404a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./root.css">
+    <link rel="stylesheet" href="./basket.css">
+</head>
+<body>
+    <header>
+        <h1>Food Flows</h1>
+        <nav class="nav_links">
+            <ul>
+                <li><i class="fa-solid fa-bars"></i></li>
+                <li><a href="./index.html"><i class="fa-solid fa-house"></i></a></li>
+                <li><i class="fa-solid fa-bell"></i></li>
+                <li><a href=""><i class="fa-solid fa-user"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+<main>
+    <div class="bonusLogin">
+        <button><a href="">Sign up</a></button>
+        <p>sign up and earn 10% points</p>
+    </div>
+    <section class="hero_section">
+        <div class="pizzaTitle">
+            <p>Classics Pizza</p>
+        </div>
+            <div class="food_content">
+                <div class="shopping_container">
+                    <img src="https://www.pizzahut.com.tr/CMSFiles/Product/LittleImage/ciftlik-evi_638138698051152285.jpg" alt="">
+                    <p>Margherita pizza </p>
+                </div>
+                <div class="item-container">
+                    <div class="quantity-container" data-item="1">
+                        <div class="quantity-btn" onclick="decreaseQuantity(1)">-</div>
+                        <input type="text" id="quantity-1" class="quantity-input" value="1" readonly>
+                        <div class="quantity-btn" onclick="increaseQuantity(1)">+</div>
+                    </div>
+                    <div class="button-container">
+                        <button id="cartButton-1" class="cart-button" onclick="addToCart(1)">Sepete Ekle</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="food_content">
+                <div class="shopping_container">
+                    <img src="https://www.pizzahut.com.tr/CMSFiles/Product/LittleImage/ciftlik-evi_638138698051152285.jpg" alt="">
+                    <p>Margherita pizza </p>
+                </div>
+                <div class="item-container">
+                    <div class="quantity-container" data-item="2">
+                        <div class="quantity-btn" onclick="decreaseQuantity(2)">-</div>
+                        <input type="text" id="quantity-2" class="quantity-input" value="1" readonly>
+                        <div class="quantity-btn" onclick="increaseQuantity(2)">+</div>
+                    </div>
+                    <div class="button-container">
+                        <button id="cartButton-2" class="cart-button" onclick="addToCart(2)">Sepete Ekle</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="food_content">
+                <div class="shopping_container">
+                    <img src="https://www.pizzahut.com.tr/CMSFiles/Product/LittleImage/ciftlik-evi_638138698051152285.jpg" alt="">
+                    <p>Margherita pizza </p>
+                </div>
+                <div class="item-container">
+                    <div class="quantity-container" data-item="3">
+                        <div class="quantity-btn" onclick="decreaseQuantity(3)">-</div>
+                        <input type="text" id="quantity-3" class="quantity-input" value="1" readonly>
+                        <div class="quantity-btn" onclick="increaseQuantity(3)">+</div>
+                    </div>
+                    <div class="button-container">
+                        <button id="cartButton-3" class="cart-button" onclick="addToCart(3)">Sepete Ekle</button>
+                    </div>
+                </div>
+            </div>
+                
+    </section>
+    <section class="top_content">
+        <div class="food_content">
+            <div class="shopping_container">
+                <img src="https://www.pizzahut.com.tr/CMSFiles/Product/LittleImage/ciftlik-evi_638138698051152285.jpg" alt="">
+                <p>Margherita pizza </p>
+            </div>
+            <div class="item-container">
+                <div class="quantity-container" data-item="4">
+                    <div class="quantity-btn" onclick="decreaseQuantity(4)">-</div>
+                    <input type="text" id="quantity-4" class="quantity-input" value="1" readonly>
+                    <div class="quantity-btn" onclick="increaseQuantity(4)">+</div>
+                </div>
+                <div class="button-container">
+                    <button id="cartButton-4" class="cart-button" onclick="addToCart(4)">Sepete Ekle</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="food_content">
+            <div class="shopping_container">
+                <img src="https://www.pizzahut.com.tr/CMSFiles/Product/LittleImage/ciftlik-evi_638138698051152285.jpg" alt="">
+                <p>Margherita pizza </p>
+            </div>
+            <div class="item-container">
+                <div class="quantity-container" data-item="5">
+                    <div class="quantity-btn" onclick="decreaseQuantity(5)">-</div>
+                    <input type="text" id="quantity-5" class="quantity-input" value="1" readonly>
+                    <div class="quantity-btn" onclick="increaseQuantity(5)">+</div>
+                </div>
+                <div class="button-container">
+                    <button id="cartButton-5" class="cart-button" onclick="addToCart(5)">Sepete Ekle</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="food_content">
+            <div class="shopping_container">
+                <img src="https://www.pizzahut.com.tr/CMSFiles/Product/LittleImage/ciftlik-evi_638138698051152285.jpg" alt="">
+                <p>Margherita pizza </p>
+            </div>
+            <div class="item-container">
+                <div class="quantity-container" data-item="6">
+                    <div class="quantity-btn" onclick="decreaseQuantity(6)">-</div>
+                    <input type="text" id="quantity-6" class="quantity-input" value="1" readonly>
+                    <div class="quantity-btn" onclick="increaseQuantity(6)">+</div>
+                </div>
+                <div class="button-container">
+                    <button id="cartButton-6" class="cart-button" onclick="addToCart(6)">Sepete Ekle</button>
+                </div>
+            </div>
+        </div>
+       </section>
+
+       <section class="top_content_bottom">
+        <div class="food_content">
+            <div class="shopping_container">
+                <img src="https://www.pizzahut.com.tr/CMSFiles/Product/LittleImage/ciftlik-evi_638138698051152285.jpg" alt="">
+                <p>Margherita pizza </p>
+            </div>
+            <div class="item-container">
+                <div class="quantity-container" data-item="7">
+                    <div class="quantity-btn" onclick="decreaseQuantity(7)">-</div>
+                    <input type="text" id="quantity-7" class="quantity-input" value="1" readonly>
+                    <div class="quantity-btn" onclick="increaseQuantity(7)">+</div>
+                </div>
+                <div class="button-container">
+                    <button id="cartButton-7" class="cart-button" onclick="addToCart(7)">Sepete Ekle</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="food_content">
+            <div class="shopping_container">
+                <img src="https://www.pizzahut.com.tr/CMSFiles/Product/LittleImage/ciftlik-evi_638138698051152285.jpg" alt="">
+                <p>Margherita pizza </p>
+            </div>
+            <div class="item-container">
+                <div class="quantity-container" data-item="5">
+                    <div class="quantity-btn" onclick="decreaseQuantity(8)">-</div>
+                    <input type="text" id="quantity-8" class="quantity-input" value="1" readonly>
+                    <div class="quantity-btn" onclick="increaseQuantity(8)">+</div>
+                </div>
+                <div class="button-container">
+                    <button id="cartButton-8" class="cart-button" onclick="addToCart(8)">Sepete Ekle</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="food_content">
+            <div class="shopping_container">
+                <img src="https://www.pizzahut.com.tr/CMSFiles/Product/LittleImage/ciftlik-evi_638138698051152285.jpg" alt="">
+                <p>Margherita pizza </p>
+            </div>
+            <div class="item-container">
+                <div class="quantity-container" data-item="9">
+                    <div class="quantity-btn" onclick="decreaseQuantity(9)">-</div>
+                    <input type="text" id="quantity-9" class="quantity-input" value="1" readonly>
+                    <div class="quantity-btn" onclick="increaseQuantity(9)">+</div>
+                </div>
+                <div class="button-container">
+                    <button id="cartButton-9" class="cart-button" onclick="addToCart(9)">Sepete Ekle</button>
+                </div>
+            </div>
+        </div>
+       </section>
+</main>
+
+<footer>
+    <section class="footer_content">
+      <div class="footer_links">
+          <ul>
+              <li><a href="#">Campaigns</a></li>
+              <li><a href="#">Foods</a></li>
+              <li><a href="#">Restaurants</a></li>
+              <li><a href="#">Byproducts</a></li>
+          </ul>
+      </div>
+
+      <div class="footer_links">
+          <ul>
+              <li><a href="#">Pizzas</a></li>
+              <li><a href="#">Trust Every Slice</a></li>
+              <li><a href="#">Cookie Policy</a></li>
+              <li><a href="#">Term of Use</a></li>
+          </ul>
+      </div>
+
+      <!-- <div class="footer_links">
+          <ul>
+              <li><a href="#">Products</a></li>
+              <li><a href="#">Conditions</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Communation</a></li>
+          </ul>
+      </div> -->
+
+      <!-- <div class="footer_links social_icon">
+          <ul>
+              <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+              <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+              <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+          </ul>
+      </div> -->
+     
+    </section>
+    <p>© FoodFlows 2024. All rights reserved.</p>
+  </footer>
+</body>
+</html>

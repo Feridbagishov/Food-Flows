@@ -1,9 +1,13 @@
 :root{
     --bordercolor: #FFF4DF;
-    --iconlogo: #FF7B00;
+    --iconlogo: #ff7b00;
     --lightcolor: #F5F5F5;
     --shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     --bgcolor: #F6AD88;
     --cardborder:#F78C47;
     --hover: #FF5F1F 0px 8px 24px;
+    --bgbody: #D3D3D3;
+    --descsize: 18px;
+    --basketbtn: #FF7600;
+    --hoverShadow:rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }

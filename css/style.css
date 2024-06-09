@@ -2,6 +2,8 @@
     margin: 0px;
     list-style: none;
     text-decoration: none;
+    border: none;
+    outline: none;
     font-family: "Poppins", sans-serif;
 }
 
@@ -9,6 +11,7 @@
 header{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 30px;
     border-bottom: 1px solid lightgray;
 }
@@ -312,74 +315,84 @@ main{
 }
 
 
-footer{
-    width: 100%;
-    height: 300px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--bgbody);
-
-}
-footer p{
-    font-size: 18px;
-}
-.footer_content{
-    width: 80%;
-    border-bottom: solid 1px var(--iconlogo);
-    display: flex;
-    align-items: start;
-    justify-content: space-evenly;
-}
-
-.footer_links{
-    width: 15%;
-    padding: 15px;
-    display: flex;
-    gap: 10px;
-}
-
-.footer_links ul{
-    padding: 10px;
-    gap: 10px;
-    border: solid 1px blueviolet;
-}
-
-.footer_links ul li a{
-    font-size: 18px;
+footer {
+    background: #D3D3D3;
     color: #000;
-}
-.footer_links ul li a:hover{
-    color: var(--iconlogo);
-}
-
-
-.social_icon  ul li i {
-    font-size: 20px;
-    border-radius: 99%;
-    padding: 10px;
+    padding: 20px 0;
     text-align: center;
 }
 
-
-.social_icon ul li i:hover{
-    background-color: var(--iconlogo);
-    color: #fff;
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
+.footer-section {
+    flex: 1;
+    padding: 20px;
+    min-width: 250px;
+}
 
-@media only screen and (max-width: 375px){
+.footer-section span {
+    margin-bottom: 10px;
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #000;
+    transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: var(--iconlogo);
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 0.9em;
+}
+
+.footer-section p {
+    margin: 10px 0;
+}
+
+.footer-section i {
+    margin-right: 10px;
+}
+
+@media only screen and (max-width: 768px) {
 
     header{
         width: 100%;
     }
-
-    .nav_links ul li{
+    .fa-basket-shopping{
         display: none;
     }
 
-    .fa-bars{
-        display: block;
+    .fa-bell{
+        display: none;
     }
+    .fa-user{
+        display: none;
+    }
+    .fa-bars {
+        display: inline-block;
+    }
+
+    
 }
+

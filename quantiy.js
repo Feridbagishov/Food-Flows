@@ -1,3 +1,5 @@
+
+
 function decreaseQuantity(item) {
     var quantityInput = document.getElementById("quantity-" + item);
     var currentQuantity = parseInt(quantityInput.value);
@@ -19,3 +21,5 @@ function addToCart(item) {
     button.style.backgroundColor = '#6c757d'; 
     button.style.cursor = 'not-allowed'; 
 }
+
+

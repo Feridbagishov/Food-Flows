@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restoran</title>
+    <script src="https://kit.fontawesome.com/7fdf74404a.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/root.css">
+    <link rel="stylesheet" href="./css/form.css">
+</head>
+<body>
+    <header>
+        <h1>Food Flows</h1>
+        <nav class="nav_links">
+            <ul>
+                <li><i class="fa-solid fa-bars"></i></li>
+                <li><a href="./index.html"><i class="fa-solid fa-house"></i></a></li>
+                <li><a href="./basket.html" target="_blank"><i class="fa-solid fa-basket-shopping"></i></a></li>
+                <li><i class="fa-solid fa-bell"></i></li>
+            </ul>
+        </nav>
+    </header>
+
+ <main>
+    <section class="hero_section">
+         <div class="container">
+                <h1>Sign Up</h1>
+            <form action="submit_form.php" method="post">
+                <label for="name">Firstname:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="name">Surname:</label>
+                <input type="text" id="name" name="name" required>
+
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="address">Adress:</label>
+                <input type="text" id="address" name="address" required>
+                <input type="submit" value="Sign up">
+            </form>
+        </div>
+    </section>
+</main>
+<footer>
+    <div class="footer-container">
+        <div class="footer-section about">
+            <h2>About Us</h2>
+            <p>Our restaurant aims to offer the freshest and most delicious food. Customer satisfaction comes first for us.</p>
+        </div>
+        <div class="footer-section links">
+            <h2>Links</h2>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="./form.html">Sign in</a></li>
+            </ul>
+        </div>
+        <div class="footer-section contact">
+            <span>Communation</span>
+            <p><i class="fas fa-map-marker-alt"></i> 123, City, Country</p>
+            <p><i class="fas fa-phone"></i> +012 456 7890</p>
+            <p><i class="fas fa-envelope"></i> info@foodflows.com</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>© FoodFlows 2024. All rights reserved.</p>
+    </div>
+</footer>
+</body>
+</html>
